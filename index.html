@@ -21,9 +21,9 @@
         while (match = search.exec(query))
         urlParams[decode(match[1])] = decode(match[2]);
 
-        var title = urlParams.title? "William Shakespeare": urlParams.title;
-        var desc = urlParams.desc? "That was funny! Go to http://localhost:8081/williamshakespeare to see the complete conversation! :)": urlParams.desc;
-        var image = urlParams.image? "https://d279m54f1qquet.cloudfront.net/content/images/1cUYxZnp4lEj5gr-blob": urlParams.image;
+        var title = urlParams.title?  urlParams.title: "William Shakespeare";
+        var desc = urlParams.desc? urlParams.desc: "That was funny! Go to http://localhost:8081/williamshakespeare to see the complete conversation! :)";
+        var image = urlParams.image? urlParams.image: "https://d279m54f1qquet.cloudfront.net/content/images/1cUYxZnp4lEj5gr-blob";
 
         var head = document.getElementsByTagName('head')[0];
         head.appendChild( createMeta("twitter:title",title) );
