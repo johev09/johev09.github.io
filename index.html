@@ -1,6 +1,25 @@
+
 <meta property="twitter:card" content="summary_large_image" />
 <!--<meta property="twitter:card" content="summary_large_image" data-react-helmet="true">-->
 <meta property="twitter:site" content="@bottr_me" />
-<meta property="twitter:title" content="William Shakespeare">
+
+<script>
+    var urlParams;
+    (window.onpopstate = function () {
+        var match,
+            pl     = /\+/g,  // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+
+        urlParams = {};
+        while (match = search.exec(query))
+        urlParams[decode(match[1])] = decode(match[2]);
+
+        console.log(urlParams);
+    })();
+</script>
+
+<!--<meta property="twitter:title" content="William Shakespeare">
 <meta property="twitter:description" content="That was funny! Go to http://localhost:8081/williamshakespeare to see the complete conversation! :)">
-<meta property="twitter:image" content="https://d279m54f1qquet.cloudfront.net/content/images/1cUYxZnp4lEj5gr-blob">
+<meta property="twitter:image" content="https://d279m54f1qquet.cloudfront.net/content/images/1cUYxZnp4lEj5gr-blob">-->
