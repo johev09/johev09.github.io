@@ -1,39 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<meta property="twitter:card" content="summary_large_image" />
-<!--<meta property="twitter:card" content="summary_large_image" data-react-helmet="true">-->
-<meta property="twitter:site" content="@bottr_me" />
-<!--
-<script>
-    function createMeta(property,content) {
-        var meta = document.createElement("meta");
-        meta.setAttribute("property",property);
-        meta.setAttribute("content",content);
-        return meta;
-    }
-    // (window.onpopstate = function () {
-        var match,
-            pl     = /\+/g,  // Regex for replacing addition symbol with a space
-            search = /([^&=]+)=?([^&]*)/g,
-            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-            query  = window.location.search.substring(1);
+<head>
+    <meta charset="UTF-8">
+    <title>Sk Jhohev | Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> </head>
+    
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite|Gochi+Hand" rel="stylesheet">
 
-        urlParams = {};
-        while (match = search.exec(query))
-        urlParams[decode(match[1])] = decode(match[2]);
-
-        var title = urlParams.title?  urlParams.title: "William Shakespeare";
-        var desc = urlParams.desc? urlParams.desc: "That was funny! Go to http://localhost:8081/williamshakespeare to see the complete conversation! :)";
-        var image = urlParams.image? urlParams.image: "https://d279m54f1qquet.cloudfront.net/content/images/1cUYxZnp4lEj5gr-blob";
-
-        var head = document.getElementsByTagName('head')[0];
-        head.appendChild( createMeta("twitter:title",title) );
-        head.appendChild( createMeta("twitter:description",desc) );
-        head.appendChild( createMeta("twitter:image", image) );
-    // })();
-</script>
 <body>
-</body>-->
+    <section class="landing-section">
+<!--
+        <div class="homepage-hero-module">
+            <div class="video-container">
+                <div class="filter"></div>
+                <video autoplay loop class="fillWidth">
+                    <source src="PATH_TO_MP4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                    <source src="PATH_TO_WEBM" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser. </video>
+                <div class="poster hidden"> <img src="PATH_TO_JPEG" alt=""> </div>
+            </div>
+        </div>
+-->
+        
+        <div class="content">
+            <h1>Sk Jhohev</h1>
+            <p><span>Optimistic ~ Dreamer ~ Developer</span></p>
+        </div>
 
-<meta property="twitter:title" content="William Shakespeare">
-<meta property="twitter:description" content="That was funny! Go to http://localhost:8081/williamshakespeare to see the complete conversation! :)">
-<meta property="twitter:image" content="https://d279m54f1qquet.cloudfront.net/content/images/ZAPBKKKZg8ZqICm-blob">
+    </section>
+    <!--
+    <div data-stellar-ratio="0.5" class="blue">
+        
+    </div> 
+-->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/stellar.js-master/src/jquery.stellar.js"></script>
+    <script>
+        $(window).stellar();
+    </script>
+    <script src="js/video.js"></script>
+</body>
+
+</html>
