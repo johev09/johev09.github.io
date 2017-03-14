@@ -1,0 +1,101 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial';
+    font-size: 12px;
+}
+
+.landing-section {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #7474BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #7474BF, #348AC7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #7474BF, #348AC7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.landing-section .content {
+}
+
+.landing-section .content p {
+    color: white;
+    font-family: 'Gochi Hand';
+    font-size: 20px;
+    word-spacing: 1.5em; 
+}
+
+.landing-section .content h1 {
+    font-family: 'Special Elite';
+    color: black;
+    opacity: 0.7;
+    font-size: 64px;
+}
+
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+
+/*========= VIDEO ============*/
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
