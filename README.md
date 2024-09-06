@@ -1,5 +1,5 @@
-# My Portfolio
+# Website About Me
 
-Just tried another canvas animation.
+Nothing about me. Just tried another canvas animation. 😁
 
 Check it out here: https://johev09.github.io/
